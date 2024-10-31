@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Single Page Application </title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+           
+        }
+         
+        ul{
+            position: sticky;
+            top: 0px;
+        }
+        section{
+            padding: 100px;
+            min-height: 700px;
+            text-align: center;
+        }
+        h1{
+            font-size: 80px;
+        }
+        #home{
+            background-color: skyblue;
+        }
+        #about{
+            background-color: yellow;
+        }
+        #Service{
+            background-color: purple;
+            color: white
+        }
+        #Contact{
+            background-color:darkcyan ;
+            color: yellow;
+        }
+        #project{
+            background-color: darkgreen;
+            color: white;
+        }
+        body{
+            margin: 0px;
+        }
+        ul{
+            background-color: black;
+            margin: 0px;
+        }
+        ul li{
+            display: inline-block;
+            padding: 20px 40px 20px;
+        }
+        ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        ul li a:hover{
+            color: yellow;
+            border-bottom:2px dotted white;
+        }
+        .fourphoto{
+            margin: 2%;
+            width: 20.5%;
+            height: 250px;
+        }
+        #threeset{
+            line-height: 30px;
+            column-count: 3;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <a href="#home"> Home </a> </li>
+        <li> <a href="#about"> About Us </a> </li>
+        <li> <a href="#Service"> Our Services </a> </li>
+        <li> <a href="#Contact"> Contact US </a> </li>
+        <li> <a href="#project"> Our Recent Project </a> </li>
+    </ul>
+
+    <section id="home"> 
+        <h1> Welcome Home </h1> 
+        <p>
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            
+        </p>
+        <img src="1.jpg" class="fourphoto"/>
+        <img src="2.jpg" class="fourphoto"/>
+        <img src="3.jpg" class="fourphoto"/>
+        <img src="4.jpg" class="fourphoto"/>
+    </section>
+
+    <section id="about"> 
+        <h1> About us </h1> 
+        <p id="threeset">
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            as sa as as as sa s s sa saas as as as as s as as as as ssa s as as as
+            
+        </p>
+    </section>
+
+    <section id="Service">
+         <h1> Our Services </h1>
+         <img src="1.jpg" class="fourphoto"/>
+         <img src="2.jpg" class="fourphoto"/>
+         <img src="3.jpg" class="fourphoto"/>
+         <img src="4.jpg" class="fourphoto"/>
+
+         <img src="4.jpg" class="fourphoto"/>
+         <img src="2.jpg" class="fourphoto"/>
+         <img src="1.jpg" class="fourphoto"/>
+         <img src="3.jpg" class="fourphoto"/> 
+    </section>
+
+    <section id="Contact"> 
+        <table align="center" cellpadding="10">
+            <caption>
+                <h1> Contact Us </h1> 
+            </caption>
+            <tr>
+                <th>Full Name <font color="red">*</font></th>
+                <td><input type="text" placeholder="Enter your name" size="40"  name="full name" tabindex="9"></td>
+            </tr>
+            <tr>
+                <th>Email <font color="red">*</font></th>
+                <td><input type="email" placeholder="Enter your mail" size="40" maxlength="10" name="My Email" tabindex="2"></td>
+            </tr>
+            <tr>
+                <th>Mobile Number</th>
+                <td><input type="number" placeholder="Enter your number" size="40" name="Mobile number"></td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td><textarea placeholder="Enter your message" rows="10" cols="39" name="message"></textarea></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                <button type="submit">Send Message</button>
+                <button type="reset"> Clear All </button>
+                </th>
+            </tr>
+        </table>
+       
+
+        
+    </section>
+
+    <section id="project"> 
+        <h1> Our Project </h1> 
+    </section>
+</body>
+</html>

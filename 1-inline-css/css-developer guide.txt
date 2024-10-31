@@ -1,0 +1,248 @@
+CSS - Cascading style sheet.
+    Html has collections of tags with limited property and values.
+    CSS has only collections of property and values.
+
+How both words ?
+    Responsive webpage = HTML(tags) + CSS (property & values)
+
+
+Types of CSS ?
+    1.inline CSS
+    2.internal CSS
+    3.exterbnal CSS
+    4.import CSS
+
+
+1.Inline css ?
+    syntax
+        <tagname style="prperty:value; property2:value; proprty3:value;"> Contents </tagname>
+    
+    example 
+        <p style="height:200px; width:300px; background:red;"> Welcome to CSS </p>
+
+        About inline css 
+            ->it is 1 to 1 (Write css code 1 time and use it only 1 time)
+            ->code will be duplicate
+            ->change take long time
+            ->file turn into heavy
+            ->page take long time to load
+            ->need more internet data to browse the page->bad performannce in digital marketing
+
+2. Internal css
+    ->it 1 to many (write css code 1 time and use in html many time)
+    ->it has 6 ways to apply css with html that called type of selector.
+
+        Syntax
+            selector{
+                property:value;
+                property:value;
+                property:value;
+            }
+        1.tag selector 
+            example:
+                     p{
+                        font-size: 18px;
+                        color: orange;
+                        margin: 2%;
+
+                    }
+-------------------------------------------------------------
+        2.tag group selector
+            example:
+                    p,div{
+            font-size: 25px;
+            line-height: 30px;
+                        }
+        h1,h2,h3,h4,div,p{
+            font-style: italic;
+        }
+    
+---------------------------------------------------------------
+        3.id selector 
+            example:
+                 #three{
+                        background-color: purple;
+                        padding: 30px;
+                        text-align: center;
+                        color: white;
+                        height: 100px;
+                        font-size: 25px;
+                     }
+        Note : Use 1 id only 1 time in each page else js will not work in future.
+-------------------------------------------------------------
+        4.class selector
+            example:
+                 .service{
+            font-size: 35px;
+            margin: 2%;
+            text-align: center;
+            color: blue;
+            float: left;
+            width: 21%;
+            padding: 40px 0px 40px;
+        }
+        Note : We can use 1 class name multiple time in 1 page.
+
+----------------------------------------------------------------------
+
+        5.parent child selector
+        example :
+                 #block1 p{
+            background: orange;
+            margin: 2%;
+            height: 200px;
+            width: 21%;
+            float: left;
+            /* font-size: 40px;
+            color: blue; */
+        }
+
+        div p{
+            background: orange;
+            margin: 2%;
+            height: 200px;
+        }
+
+        .myclass p{
+            background: orange;
+            margin: 2%;
+            height: 200px;
+        }
+
+    Note : The element can be tag, id, class 
+
+
+----------------------------------------------------------
+        6.attribute selector 
+
+            example :
+                    input[type="text"]{
+                         height: 30px;
+                         width: 250px;
+                        margin: 20px;
+                    }
+    p{ } = tag selector
+    div,p{ }= group selector
+    div p{ } = parent child selector
+    .abc{ } = class selector 
+    #xyz{ } = id selector
+    input[type="text"]{ } = attribute selector 
+
+----------------------------------------------------------
+
+
+===========property and values===========
+
+        float: - it convert from block level tag to inline
+            float:left - it print from left to right
+            float-right - it print form right to left
+
+        height - 3 Types
+            height:200px; it is fixed for 200px only 
+            min-height:200px; the min height is fixed for 200px if content is more it will extend auto 
+            height:auto - the height is fully based on contents 
+             
+        width - 4 Types
+            width:px - it is fixed in all size of window 
+            width:% - it will fit in all size of window(scroll bar not come, page will become responcive)
+            min-width:px
+            mx-width:px
+
+------------------------------------------------------------------------------------------------
+            background - 9 types 
+                background:red;
+                background-color:blue;
+                background-color:rgb(100,140,120) - 0 to 255 the color range
+                background-color:rgba(100,140,120 , 0.5) ;- 0.1 to 0.9 - it is brightness level
+                background-image:url("1.jpg");
+                background-image:liner-gradient(blue,orange,green) -it is top to bottom 
+                background-image:line-gradient(to left, blue, orange, green);
+                background-image:line-gradient(to right, blue, orange, green);
+                background-image:line-gradient(to top, blue, orange, green);
+
+------------------------------------------------------------------------------------------
+
+        margin - it apply a space outside of tags 
+            margin-auto = it print center of precent area 
+        margin:40px; it apply 40px gap from all side
+        margin-top:40px;
+        margin-bottom:40px;
+        matrgin-left:40px;
+        margin-right:40px;
+        margin:top left-right bottom
+            margin:30px 40px 60px;
+        
+
+    padding - it apply space inside the tag 
+        padding: 40px; it apply 40px all side 
+        padding-top: 40px
+        padding-left: 40px
+        padding-right : 40px
+        padding-bottom : 40px
+        padding:top  left-right bottom 
+
+-----------------------------------------------------------------------------------------------------------
+    8 types of border in css 
+        ->Solid
+        ->Dotted
+        ->dasged
+        ->double
+        ->insect
+        ->outsect
+        ->ridge
+        ->groove
+
+    border:10px dotted red;
+------------------------------------------------------
+    Display
+        display:none; it hide the element
+        display:inline; it convert from block level tag to inline but height and width do not apply
+        display:inline-block; it convert from block level tag to inline and height and width get apply
+        display:block; convert from inline tag to block level tag
+        display:grid 
+        display:flex 
+
+-----------------------------------------------------------------------------------------------
+    Animation : 
+        example 
+         @keyframes mybanner{
+            25%{background-image: url('2.jpg');}
+            50%{background-image: url('3.jpg');}
+            75%{background-image: url('4.jpg');}
+            /* 25%{background:lightgreen;} */
+
+        }
+        #banner{
+                /* background: skyblue; */
+                background-image: url('1.jpg');
+                padding: 150px;
+                text-align: center;
+                font-size: 100px;
+                color: orange;
+                height: 200px;
+                animation: mybanner;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+---------------------------------------------------------------
+    Media Query for responcive webpage design 
+        ex:
+         @media screen and (min-width:1px) and (max-width:600px){
+            h1{ font-size:40px; color: red;}
+            section{grid-template-columns: auto;}
+        }
+-------------------------------------------------------------------
+    position 
+        ->Static
+        ->absolute
+        ->relative
+        ->sticky
+        ->fixed 
+---------------------------------------------------------------------
+    Overflow 
+        Overflow:auto;
+        Overflow:hidden;
+        Overflow-x:auto/hidden;
+        Overflow-y:auto/hidden;     
+------------------------------------------------------------------------ 
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+
+        }
+        #mainmenu{
+            margin: 0px;
+            background: black;
+            top: 0px;
+            position: sticky;
+        }
+        #mainmenu li{
+            display: inline-block;
+            color: white;
+            padding: 20px 40px 20px;
+            font-size: 22px;
+
+        }
+        #mainmenu li:hover{
+            cursor: pointer;
+            background: orangered;
+        }
+        .submenu{
+            position: absolute;
+            background: rgb(148, 28, 204);
+            margin-left: -40px;
+            padding-left: 0px;
+            margin-top: 19px;
+            display: none;
+            min-width: 237px;
+        }
+        .submenu li{
+            display: block !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+        #mainmenu li:hover .submenu{
+            display: block;
+
+        }
+        @keyframes mybanner{
+            25%{background-image: url('2.jpg');}
+            50%{background-image: url('3.jpg');}
+            75%{background-image: url('4.jpg');}
+            /* 25%{background:lightgreen;} */
+
+        }
+        #banner{
+                /* background: skyblue; */
+                background-image: url('1.jpg');
+                padding: 150px;
+                text-align: center;
+                font-size: 100px;
+                color: orange;
+                height: 200px;
+                animation: mybanner;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            #container{
+            width: 80%;
+            margin: auto;
+            /* min-height: 500px; */
+
+        }
+        #service{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            /* flex-wrap: wrap; */
+        }
+        .myservice{
+            font-size: 35px;
+            margin: 50px 0px 50px ;
+            /* padding: 20px; */
+            color: orange;
+            /* font-weight: bold; */
+        }
+        h1{
+            color: rgb(76, 0, 255);
+            font-size: 50px;
+            text-align: center;
+        }
+        footer{
+            background-color: dimgray;
+            color: aliceblue;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="mainmenu">
+        <li> Home </li>
+        <li> About Us </li>
+        <li> Contact Us </li>
+        <li> Services 
+            <ul class="submenu">
+                <li> Website Development </li>
+                <li> App Development </li>
+                <li> Digital Marketing </li>
+                <li> Content  writing </li>
+            </ul>
+        </li>
+        <li> Branches 
+            <ul class="submenu">
+                <li>Bangalore</li>
+                <li>Delhi</li>
+                <li>Chennai</li>
+                <li>Patna</li>
+                <li>Belgav</li>
+            </ul>
+        </li>
+        <li> Post Requirement 
+            <ul class="submenu">
+                <li>Education</li>
+                <li>Hiring</li>
+                <li>Billing</li>
+                <li>Feedback</li>
+            </ul>
+        </li>
+    </ul>
+    <section id="banner"></section>
+    <section id="container"> 
+        <h1> Welcome To UI Master</h1>
+        <div id="service">
+            <div class="myservice"> website Development</div>
+            <div class="myservice"> app Development</div>
+            <div class="myservice"> backend Development</div>
+            <div class="myservice"> wesite Design</div>
+            <div class="myservice"> Logo Design </div>
+            <div class="myservice"> Content writing </div>
+            <div class="myservice"> digital marketing </div>
+            <div class="myservice"> payroll Management </div>
+            <div class="myservice"> Out Sourcing </div>
+            <div class="myservice"> Hire & Deploy </div>
+        </div>
+    </section>
+   <footer>
+    <p> Help Line Number - 11223455678</p>
+   </footer>
+</body>
+</html>

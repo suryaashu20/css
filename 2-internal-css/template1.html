@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        nav{
+            margin: 0px;
+            background-color: black;
+            padding: 18px 10% 18px;
+            top: 0px;
+            position: sticky;
+
+        }
+        nav a{
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        nav a:hover{
+            color: orange;
+            border-bottom: 2px dotted white;
+            /* text-decoration: 2px dotted; */
+        }
+        #banner{
+            height:400px;
+            background-image: url('1.jpg');
+            background-size: 100% 100%;
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+            min-height: 500px;
+
+        }
+        h1{
+            color: rgb(76, 0, 255);
+            font-size: 60px;
+            text-align: center;
+        }
+        footer{
+            background-color: darkcyan;
+            color: white;
+            padding: 30px;
+            height: 130px;
+            text-align: center;
+            font-size: 18px;
+        }
+        #service{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .myservice{
+            font-size: 25px;
+            margin: 20px;
+            padding: 20px;
+            color: purple;
+            font-weight: bold;
+        }
+        marquee{
+            color: red;
+            font-size: 20px;
+            padding: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="" direction="right">
+        Call 8073912889 For Any Query.....
+    </marquee>
+    
+    <nav>
+        <a href=""> Home </a>
+        <a href=""> About Us </a>
+        <a href=""> our Services </a>
+        <a href=""> Contact Us </a>
+        <a href=""> our Product </a>
+
+    </nav>
+
+    <section id="banner"> </section>
+
+    <section id="container"> 
+        <h1> Welcome To UI Master</h1>
+        <div id="service">
+            <div class="myservice"> website Development</div>
+            <div class="myservice"> app Development</div>
+            <div class="myservice"> backend Development</div>
+            <div class="myservice"> wesite Design</div>
+            <div class="myservice"> Logo Design </div>
+            <div class="myservice"> Content writing </div>
+            <div class="myservice"> digital marketing </div>
+            <div class="myservice"> payroll Management </div>
+            <div class="myservice"> Out Sourcing </div>
+            <div class="myservice"> Hire & Deploy </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> The footer ! </p>
+    </footer>
+</body>
+</html>
